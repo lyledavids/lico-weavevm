@@ -1,38 +1,39 @@
-# sv
+# Lico: A Web3 TikTok Platform
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## Introduction
+Lico is a decentralized social media platform inspired by TikTok, built on web3 technologies and blockchain to empower content creators.
 
-## Creating a project
+## Key Features
+- User-created profiles with customizable avatars and bios
+- Video uploads with Arweave for decentralized, permanent hosting
+- Commenting and liking functionality
+- Following and unfollowing other users
+- Monetization through tipping or subscription models (future feature)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Technology Stack
+- Solidity smart contract for managing user profiles, videos, and interactions
+- SvelteKit for the front-end application
+- Ethers.js for web3 integration and interacting with the smart contract
+- Arweave for decentralized video storage
+- Tailwind CSS for responsive and modern UI styling
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Smart Contract Overview
+The Solidity smart contract handles the following functionalities:
+- User profiles, including username, bio, and avatar
+- Video uploads, likes, comments, and metadata
+- Tracking user followers and following
+- Pausing and unpausing the contract for maintenance
 
-# create a new project in my-app
-npx sv create my-app
-```
+## Frontend Architecture
+The frontend of Lico is built using SvelteKit, which provides server-side rendering and static site generation. The application uses Svelte stores for state management, including web3 and user data. Reusable UI components are implemented for the video feed, video cards, and profile pages, seamlessly integrating with the smart contract through Ethers.js.
 
-## Developing
+## Deployment and Storage
+The Lico project is currently in development and has not yet been deployed. After the initial deployment, the plan is to switch the video storage from Arweave to using WeaveVM procompiles which stores on Arweave directly from solidity, which will allow for increased data limits and improved performance.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Future Roadmap
+- Implement tipping and subscription-based monetization for creators
+- Develop advanced video discovery and recommendation algorithms
+- Explore cross-chain functionality for broader user accessibility
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Conclusion
+Lico aims to revolutionize social media by empowering creators and users through the use of web3 technologies. By creating a more transparent and decentralized platform, Lico provides users with greater control over their content and data, fostering a vibrant community of content creators and engaged viewers.
