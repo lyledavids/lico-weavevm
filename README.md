@@ -1,4 +1,6 @@
+(The Lico project is currently in development and has not yet been deployed. More info under Deployment subheading)
 # Lico: A Web3 TikTok Platform
+
 
 ## Introduction
 Lico is a decentralized social media platform inspired by TikTok, built on web3 technologies and blockchain to empower content creators.
@@ -29,6 +31,15 @@ The frontend of Lico is built using SvelteKit, which provides server-side render
 
 ## Deployment and Storage
 The Lico project is currently in development and has not yet been deployed. After the initial deployment, the plan is to switch the video storage from Arweave to using WeaveVM procompiles which stores on Arweave directly from solidity, which will allow for increased data limits and improved performance.
+
+## Screenshots
+
+![Screenshot 1](1.png)
+
+![Screenshot 2](2.png) 
+
+![Screenshot 3](1.png)
+
 
 ## Future Roadmap
 - Implement tipping and subscription-based monetization for creators
